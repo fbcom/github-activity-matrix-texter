@@ -1,9 +1,11 @@
 #!/usr/bin/python
+import os
+import string
 
 
 def parse_font_definition(font_definition):
     """
-    Parses test and line based font definition
+    Parses text- and line based font definition
 
     How this works:
 
@@ -94,8 +96,6 @@ def display_print_matrix(print_matrix):
 
 
 # Demo
-import os
-import string
 text = string.ascii_uppercase + string.digits + "-"
 for file_name in os.listdir("."):
     if file_name.endswith("_font.txt"):
