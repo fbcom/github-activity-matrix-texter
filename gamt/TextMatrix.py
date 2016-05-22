@@ -118,16 +118,3 @@ class TextMatrix():
     def display_print_matrix(self, print_matrix):
         for row in print_matrix:
             print row
-
-if __name__ == '__main__':
-
-    # Demo
-    textmatrix = TextMatrix()
-    text = string.ascii_uppercase + string.digits + "-"
-    for file_name in os.listdir("."):
-        if file_name.endswith("_font.txt"):
-            if 'font' in locals():
-                print
-            font = textmatrix.load_font(file_name)
-            print_matrix = textmatrix.generate_print_matrix(font, text)
-            textmatrix.display_print_matrix(print_matrix)
