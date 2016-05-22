@@ -112,7 +112,6 @@ class TextMatrix():
     def count_set_pixel(self):
         ret = 0
         for row in self._print_matrix:
-            print row
             ret += len(row) - row.count(' ') # non spaces count as set pixel
         return ret
 
